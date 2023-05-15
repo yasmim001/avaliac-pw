@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title> Loja de Eletrônicos </title>
+</head>
+<body>
+     <header> <h2> Loja de Eletronicos </h2> </header>
+    <script>
+    const  nomeQuant = { 
+    Celular: 150, 
+    FoneOuvido: 55, 
+    Pendrive: 37, 
+    CaixaAudio: 28, 
+    carregadorPortatil: 29, 
+    Tablet: 32
+   }
+  
+   const nomeQuantVend = {  
+    Celular: 38, 
+    FoneOuvido: 10, 
+    Pendrive: 17,
+    CaixaAudio: 8, 
+    carregadorPortatil: 15, 
+    Tablet: 5 
+    
+   }
+  
+  function Calcular(nomeQuant,nomeQuantVend){  
+   let restProd = {};
+   for (let produto in nomeQuant){ 
+       restProd[produto] = nomeQuant[produto] - nomeQuantVend[produto];
+   }
+       return restProd;
+   }
+   let restProd = Calcular(nomeQuant,nomeQuantVend);
+   console.log(restProd);
+   </script>
+   </body>
+   </html>
+  
+  
